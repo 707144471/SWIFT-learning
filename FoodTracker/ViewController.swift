@@ -61,7 +61,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
         mealNameLabel.text = "Default Text"
 
     }
-    
+    //手势点击事件
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         // Hide the keyboard.此代码可确保如果用户在文本字段中键入图像视图时，键盘将被正确解除。
         nameTextField.resignFirstResponder()
