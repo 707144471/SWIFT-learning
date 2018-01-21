@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -56,11 +57,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
 
 
     
-//MARK: Actions-按钮
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Default Text"
 
-    }
     //手势点击事件
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         // Hide the keyboard.此代码可确保如果用户在文本字段中键入图像视图时，键盘将被正确解除。
